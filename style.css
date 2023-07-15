@@ -147,6 +147,7 @@ header {
 }
 
 .project-title {
+  text-decoration: underline;
   text-align: left;
   float: left;
 }
@@ -198,8 +199,11 @@ header {
   margin-top: 0px;
 }
 
+.old-proj-title{
+  text-decoration: underline;
+}
+
 .older-link{
-  margin-left: 45%;
   text-align: center;
   color: #fff;
   border: 1px solid var(--secondary-background-colour);
@@ -244,7 +248,12 @@ header {
 
 #hampstead-title{
   padding-left: 15px;
- padding-bottom: 0px;
+  padding-bottom: 0px;
+  text-decoration: underline;
+}
+
+#uni-title{
+  text-decoration: underline;
 }
 
 .secondary-edu {
