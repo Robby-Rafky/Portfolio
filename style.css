@@ -1,0 +1,259 @@
+h1 {
+
+}:root{
+    --base-background-colour: #0B0C10;
+    --header-background-colour: #003E3E;
+    --skill-background-colour: #1F2833;
+    --job-background-colour: #1F2833;
+    --about-background-colour: #1F2833;
+    --contact-background-colour: #1F2833;
+    --project-background-colour: #1F2833;
+    --secondary-background-colour: #66FCF1;
+    --education-background-colour: #1F2833;
+}
+
+body {
+  font-family: Trebuchet MS, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--base-background-colour);
+  color: #fff;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  background: var(--header-background-colour);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 32, 32, 1), rgba(0, 0, 0, 0.2));
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 183, 0, 1), rgba(0, 0, 0, 0)) 0.5 0%;
+}
+
+.name {
+  font-size: 35px;
+  padding: 25px;
+  margin: 0;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.section-title {
+  font-size: 24px;
+}
+
+.open-to-work{
+  text-align: center;
+  padding-top: 0px;
+}
+
+.skills-subsection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#proficient-title{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 32, 32, 0.5), rgba(0, 0, 0, 0.1))
+}
+#exp-title{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 32, 32, 0.5), rgba(0, 0, 0, 0.1))
+}
+#light-exp-title{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 32, 32, 0.5), rgba(0, 0, 0, 0.1))
+}
+#dev-title{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 32, 32, 0.5), rgba(0, 0, 0, 0.1))
+}
+#future-title{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 32, 32, 0.5), rgba(0, 0, 0, 0.1))
+}
+#lfw-title{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 32, 32, 0.5), rgba(0, 0, 0, 0.1))
+}
+
+.skill {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid var(--secondary-background-colour);
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: var(--skill-background-colour);
+  border-radius: 10px;
+}
+
+.job-role {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--secondary-background-colour);
+  background: var(--job-background-colour);
+  border-radius: 10px;
+}
+
+.about-me-info{
+  background: var(--about-background-colour);
+  border: 3px solid var(--secondary-background-colour);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.about-me-contact {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-item {
+  border: 1px solid var(--secondary-background-colour);
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: var(--contact-background-colour);
+  border-radius: 10px;
+}
+
+.project-section {
+  display: grid;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background: var(--project-background-colour);
+  border: 3px solid var(--secondary-background-colour);
+  color: #fff;
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.project-content {
+  margin-left: 20px;
+}
+
+.project-title {
+  text-align: left;
+  float: left;
+}
+
+.project-link{
+  color: #1F2833;
+  background: var(--secondary-background-colour);
+  text-align: right;
+  float: right;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 7.5px 20px;
+}
+
+.project-description{
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.project-libraries{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.library-item {
+  color: #1F2833;
+  display: inline-block;
+  padding: 5px 15px;
+  background: var(--secondary-background-colour);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.older-projects {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mid-proj-item{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 255, 241, 1), rgba(0, 0, 0, 0)) 0.5 0%;
+  padding-bottom: 15px
+}
+
+.older-project-list{
+  margin-top: 0px;
+}
+
+.education-subsection {
+  padding-top: 5px;
+  background: var(--education-background-colour);
+  border-radius: 20px;
+}
+
+#university-surrey{
+  padding-left: 20px;
+  margin: 15px;
+  border: 3px solid var(--secondary-background-colour);
+}
+
+.uni-module-list{
+  text-align: center;
+}
+
+.uni-module-item {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid var(--secondary-background-colour);
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: var(--skill-background-colour);
+  border-radius: 10px;
+}
+
+#hampstead-school{
+  margin: 15px;
+  padding: 0px;
+  border: 3px solid var(--secondary-background-colour);
+  column-gap: 0px;
+}
+
+#hampstead-title{
+  padding-left: 15px;
+ padding-bottom: 0px;
+}
+
+.secondary-edu {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-left: 15px;
+  padding-bottom: 15px
+}
+
+#a-level{
+  padding-top: 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(102, 255, 241, 1), rgba(0, 0, 0, 0)) 0.5 0%;
+  border-top-right-radius: 25px;
+}
+
+#gcse{
+  border-top-left-radius: 25px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
