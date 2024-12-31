@@ -140,6 +140,11 @@ header {
   border-radius: 20px;
 }
 
+.about-me-info li {
+    margin-bottom: 5px; 
+    margin-left: 20px; 
+}
+
 .project-section {
   display: grid;
   margin-bottom: 15px;
