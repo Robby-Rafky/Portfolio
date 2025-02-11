@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navIndicator = document.querySelector(".nav-indicator");
   const sectionNames = ["Home", "Looking for Work", "Skills", "About Me", "Projects", "Education"];
 
-  // Create navigation dots and floating title
   const floatingTitle = document.createElement("div");
   floatingTitle.classList.add("floating-title");
   document.body.appendChild(floatingTitle);
@@ -11,12 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach((section, index) => {
     let dot = document.createElement("div");
     dot.dataset.index = index;
-    dot.addEventListener("click", () => updateSections(index, true)); // Enable click
+    dot.addEventListener("click", () => updateSections(index, true)); 
     navIndicator.appendChild(dot);
   });
 
   let currentIndex = 0;
-  let scrollThreshold = 80; // Adjust scrolling sensitivity
+  let scrollThreshold = 80;
   let scrollCount = 0;
 
   const updateSections = (index) => {
@@ -34,15 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
       if (i === index) {
         floatingTitle.innerText = sectionNames[i];
 
-        // Get dot position and update floating title
         let dotRect = dot.getBoundingClientRect();
         floatingTitle.style.top = `${dotRect.top}px`;
-        floatingTitle.style.right = "40px"; // Offset from the dot
+        floatingTitle.style.right = "40px"; 
       }
     });
 
     currentIndex = index;
-    scrollCount = 0; // Reset scroll counter
+    scrollCount = 0; 
   };
 
   document.addEventListener("wheel", (event) => {
@@ -54,9 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (event.deltaY < 0 && currentIndex > 0) {
         updateSections(currentIndex - 1);
       }
-      scrollCount = 0; // Reset after changing section
+      scrollCount = 0; 
     }
   });
 
-  updateSections(0); // Set initial section
+  updateSections(0); 
 });
