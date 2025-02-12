@@ -66,33 +66,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectDetailLink = document.getElementById("project-detail-link");
 
   const projectDescriptions = {
-    "3D Object Detection": "Designed and implemented a machine learning pipeline to detect telephone poles in LiDAR point clouds as part of a Master's thesis in collaboration with BT. Utilised Python libraries such as Ultralytics and NumPy for model development, Matplotlib for visualization, and custom data augmentation techniques. 3D point clouds are encoded as 2D images for much faster processing and to single out details.",
+    "3D object detection for locating telephone poles in LiDAR point clouds [In partnership with BT]": "Designed and implemented a machine learning pipeline to detect telephone poles in LiDAR point clouds as part of a Master's thesis in collaboration with BT. Utilised Python libraries such as Ultralytics and NumPy for model development, Matplotlib for visualization, and custom data augmentation techniques. 3D point clouds are encoded as 2D images for much faster processing and to single out details.",
     "Ponder LIVETRACK": "Collaborated on a university project to develop a remote water quality monitoring system, PONDER, which autonomously measures indicators such as temperature, total dissolved solids (TDS), turbidity, and pH levels. The system utilizes Arduino for sensor integration, Bluetooth for local transmission, and GSM/GPRS modules for remote communication. Data is processed and displayed on an Android application built using Kotlin, contributing to the UK's Clean Growth Grand Challenge.",
-    "Audio-Visual Object Event Tracking": "Developed a Bachelor's project tracking objects in real time using depth inference to accurately determine object location within a 2D frame. Audio mapped to the object's location to simulate audio from that location. Other techniques such as searching a local scaled frame improves accuracy. The project provides non-sonorus objects audio for the use case of informing visually impared individuals of potential obstacles with accurate directional audio.",
+    "Audio-Visual Object Event Tracking in Time and Space": "Developed a Bachelor's project tracking objects in real time using depth inference to accurately determine object location within a 2D frame. Audio mapped to the object's location to simulate audio from that location. Other techniques such as searching a local scaled frame improves accuracy. The project provides non-sonorus objects audio for the use case of informing visually impared individuals of potential obstacles with accurate directional audio.",
     "NLP Project: Classification using NER": "Conducted model training and analysis for natural language processing tasks using nltk and sk-learn. Focused on recognizing and classifying named entities in text, handling both long-form and abbreviated formats, and enhancing model performance through identifier tokens and custom preprocessing pipelines.",
-    "AI Audio Synth": "A coursework project using Python to process audio signals and extract formant frequencies. A trained model synthesises audio using formant frequencies from the input audio file.",
+    "AI Audio Synthesis and analysis": "A coursework project using Python to process audio signals and extract formant frequencies. A trained model synthesises audio using formant frequencies from the input audio file.",
     "Scene Recognition": "Engaged in model training and analysis for scene classification using Google Colab. The project included visualization of model layers, providing insights into hidden layers' decision-making processes.",
     "Python Gardening Game": "Designed and implemented a gardening simulation game using Python, incorporating features like plant mutation algorithms, an expandable skill tree, and inventory management. Demonstrated skills in game development, user interface and user experience design.",
     "PoE Loadout Desktop": "Developed a desktop tool for Path of Exile using Python, leveraging Pandas for data processing, Tkinter for the user interface, and the POE.ninja API for real-time price updates. Implemented features to centralize item listings and streamline data visualization, showcasing skills in API integration, data handling, and desktop application development."
   };
 
   const projectLibraryData = {
-    "3D Object Detection": ["Python", "Sci-Py", "Ultralytics", "openCV", "numPy", "open3d", "Google Colab"],
+    "3D object detection for locating telephone poles in LiDAR point clouds [In partnership with BT]": ["Python", "Sci-Py", "Ultralytics", "openCV", "numPy", "open3d", "Google Colab"],
     "Ponder LIVETRACK": ["Kotlin", "Azure", "C++", "PHP"],
-    "Audio-Visual Object Event Tracking": ["Python", "openCV", "Pygame", "numPy", "Pyglet", "imutils"],
+    "Audio-Visual Object Event Tracking in Time and Space": ["Python", "openCV", "Pygame", "numPy", "Pyglet", "imutils"],
     "NLP Project: Classification using NER": ["Python", "transformers", "nltk", "Scikit-Learn", "JSON", "Google Colab"],
-    "AI Audio Synth": ["Python", "PyTorch", "torchvision", "numPy", "Scikit-Learn"],
+    "AI Audio Synthesis and analysis": ["Python", "PyTorch", "torchvision", "numPy", "Scikit-Learn"],
     "Scene Recognition": ["Python", "Sci-Py", "Google Colab"],
     "Python Gardening Game": ["Python", "Pygame", "JSON"],
     "PoE Loadout Desktop": ["Python", "Pandas", "JSON", "Tkinter"]
   };
 
   const projectLinks = {
-    "3D Object Detection": "https://github.com/Robby-Rafky/3D-object-detection-for-locating-telephone-poles-in-LiDAR-point-clouds",
+    "3D object detection for locating telephone poles in LiDAR point clouds [In partnership with BT]": "https://github.com/Robby-Rafky/3D-object-detection-for-locating-telephone-poles-in-LiDAR-point-clouds",
     "Ponder LIVETRACK": "https://github.com/sporadicE/PONDER",
-    "Audio-Visual Object Event Tracking": "https://github.com/Robby-Rafky/Audio-Visual-Object-Event-Tracking-In-Time-And-Space",
+    "Audio-Visual Object Event Tracking in Time and Space": "https://github.com/Robby-Rafky/Audio-Visual-Object-Event-Tracking-In-Time-And-Space",
     "NLP Project: Classification using NER": "https://github.com/Robby-Rafky/NLP-Project-Classification-using-Named-Entity-Recognition",
-    "AI Audio Synth": "https://github.com/Robby-Rafky/AI-Audio-Synth",
+    "AI Audio Synthesis and analysis": "https://github.com/Robby-Rafky/AI-Audio-Synth",
     "Scene Recognition": "https://github.com/Robby-Rafky/Scene_Recognition_CW",
     "Python Gardening Game": "https://github.com/Robby-Rafky/Nameless_Gardening_Game",
     "PoE Loadout Desktop": "https://github.com/Robby-Rafky/PoELoadoutDESKTOP"
