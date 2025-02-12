@@ -3,65 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robby Rafky - Python Developer</title>
+  <title>Robby Rafky - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="nav-indicator"></div>
 
+  <!-- Home Section -->
   <section id="home">
-    <header class="name-header">
-      <h1 class="name">Robby Rafky [UNDER CONSTRUCTION]</h1>
-      <ul class="contact-list">
-        <li><a href="https://github.com/Robby-Rafky" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/robby-rafky-699710252/" target="_blank">LinkedIn</a></li>
-      </ul>
-    </header>
+    <div class="section-content">
+      <header class="name-header">
+        <h1 class="name">Robby Rafky</h1>
+        <p class="subtitle">Python Developer | AI Enthusiast</p>
+        <ul class="contact-list">
+          <li><a href="https://github.com/Robby-Rafky" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/robby-rafky-699710252/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </header>
+    </div>
   </section>
 
+  <!-- Looking for Work -->
   <section id="open-to-work">
-    <h2>Looking for Work</h2>
-    <ul>
-      <li>Machine Learning Engineer</li>
-      <li>AI Specialist</li>
-      <li>Data Engineer</li>
-      <li>Data Scientist</li>
-      <li>Software Developer</li>
-    </ul>
+    <div class="section-content">
+      <h2>Looking for Work</h2>
+      <p>I'm actively seeking roles in:</p>
+      <ul>
+        <li>Machine Learning Engineer</li>
+        <li>AI Specialist</li>
+        <li>Data Engineer</li>
+        <li>Data Scientist</li>
+        <li>Software Developer</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="skills">
+<!-- Skills Section -->
+<section id="skills">
+  <div class="section-content">
     <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Machine Learning</li>
-      <li>Computer Vision</li>
-      <li>PyTorch</li>
-      <li>TensorFlow</li>
-      <li>Git</li>
-    </ul>
-  </section>
-
+    <div class="skills-container">
+      <div class="skill-group core-skills" id="core-skills-card">
+        <h3>Core Skills</h3>
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>Computer Vision</li>
+          <li>Data Engineering</li>
+        </ul>
+      </div>
+      <div class="other-skills-row">
+        <div class="skill-group">
+          <h3>ETL Skills</h3>
+          <ul class="skill-list">
+            <li>Pandas</li>
+            <li>SQL</li>
+            <li>Spark</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Deployment</h3>
+          <ul class="skill-list">
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Other</h3>
+          <ul class="skill-list">
+            <li>Git</li>
+            <li>Linux</li>
+            <li>Bash</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   
+  <!-- About Me -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>I’m an MSc Artificial Intelligence student...</p>
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>
+        I’m an <strong>MSc Artificial Intelligence student</strong> at the University of Surrey, passionate about applying AI to solve practical problems.
+        My experience includes:
+      </p>
+      <ul>
+        <li>Transforming LiDAR point clouds into image encodings for efficient AI processing (Master's thesis with BT).</li>
+        <li>Inferring 3D depth from 2D camera data for real-time object tracking (Bachelor’s project).</li>
+        <li>Hands-on experience in machine learning, NLP, and audio analysis.</li>
+      </ul>
+    </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>3D Object Detection</h3>
-      <p>Developed a machine learning pipeline to detect telephone poles...</p>
+    <div class="section-content">
+      <h2>Projects</h2>
+      <div class="projects-new-container">
+        <div class="project-titles">
+          <div class="project-title" data-project-name="3D Object Detection">3D Object Detection (BT Partnership)</div>
+          <div class="project-title" data-project-name="Ponder LIVETRACK">Ponder LIVETRACK</div>
+          <div class="project-title" data-project-name="Audio-Visual Object Event Tracking">Audio-Visual Object Event Tracking</div>
+        </div>
+        <div class="project-details-container">
+          <div class="connecting-line"></div>
+          <div class="project-details">
+            <h3 id="project-detail-title"></h3>
+            <p id="project-detail-description"></p>
+            <div class="libraries">
+              <h4>Libraries Used:</h4>
+              <ul class="skill-list" id="project-detail-libraries">
+              </ul>
+            </div>
+            <a id="project-detail-link" href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="project">
-      <h3>Ponder LIVETRACK</h3>
-      <p>Collaborated on a remote water quality monitoring system...</p>
-    </div>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p>University of Surrey - MSc Artificial Intelligence</p>
   </section>
 
   <script src="script.js"></script>
