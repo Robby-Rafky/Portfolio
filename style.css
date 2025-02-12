@@ -1,4 +1,4 @@
-/* General Styling */
+/* -----------General Styling----------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Sections */
 section {
   position: fixed;
   top: 0;
@@ -19,33 +18,44 @@ section {
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(20px); /* Start a bit lower */
+  transform: translateY(20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-/* Section Content */
+/* -----------Section Content----------- */
 .section-content {
-  width: 80%;
-  max-width: 1200px; /* Increased max-width */
+  width: 90%;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
 }
 
 section h2 {
-  font-family: 'Arial Black', sans-serif; /* Thicker font */
-  font-size: 2.5em; /* Larger size */
-  text-transform: uppercase; /*optional*/
-  letter-spacing: 1px; /*optional*/
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-/* Visible Section */
+section h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, white, transparent);
+}
+
 section.visible {
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(0); /* Move to its final position */
+  transform: translateY(0);
 }
 
-/* Side Navigation Indicator */
 .nav-indicator {
   position: fixed;
   right: 20px;
@@ -56,7 +66,7 @@ section.visible {
   gap: 10px;
 }
 
-/* Navigation Dots */
+/* -----------Navigation Dots----------- */
 .nav-indicator div {
   width: 10px;
   height: 10px;
@@ -71,7 +81,6 @@ section.visible {
   transform: scale(1.3);
 }
 
-/* Floating Section Title */
 .floating-title {
   position: absolute;
   font-size: 14px;
@@ -80,21 +89,74 @@ section.visible {
   transition: top 0.3s ease-in-out;
 }
 
+/* -----------Home Section----------- */
+#home .home-content {
+  text-align: center;
+}
 
-/* Skills Section */
+.name-header .name {
+    font-size: 4em;
+    font-family: 'Arial Black', sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.name-header .subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: 1px solid #555; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-list li {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.contact-list li:not(:first-child):not(:nth-child(2)) {
+  border: 1px solid #555;
+}
+
+/* -----------Skills Section----------- */
 #skills .section-content {
-    padding: 0; /* Remove default padding */
+    padding: 0;
 }
 
 .skills-container {
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* Stretch items horizontally */
-  width: 100%; /* Take full width of section */
+  align-items: stretch;
+  width: 100%;
 }
 
-#core-skills-card { /* targeting using ID */
-  width: 100%; /* Core skills take full width */
+#core-skills-card {
+  width: 100%;
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid #333;
@@ -110,45 +172,76 @@ section.visible {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px; /* Match overall container width */
-  margin: 0 auto; /* Center the row */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .skill-group {
-  width: calc(30% - 10px); /* Each smaller skill group takes up 30% with spacing*/
+  width: calc(30% - 10px);
   min-width: 200px;
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid #333;
   border-radius: 5px;
-  box-sizing: border-box; /* Important to include padding and border in the width */
+  box-sizing: border-box;
 }
 
 .skill-group h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 1.4em; /* Adjusted h3 size */
+  font-size: 1.4em;
   text-align: center;
 }
 
 .skill-list {
   list-style: none;
   padding: 0;
-  display: flex; /* Use flexbox to align items horizontally */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: center; /* Center the content */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill-list li {
-  display: inline-block; /* Display as inline blocks */
-  margin: 5px; /* Add some spacing */
+  display: inline-block;
+  margin: 5px;
   padding: 5px 10px;
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
 }
 
-/* Projects Section */
+/* -----------Education Section----------- */
+.education-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-entry {
+  margin-bottom: 20px;
+  padding: 25px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.education-entry h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-education {
+  font-size: 1.1em;
+}
+
+.smaller-education {
+  font-size: 0.9em;
+}
+
+.education-entry p {
+    margin-bottom: 5px; 
+}
+
+/* -----------Projects Section----------- */
 .projects-new-container {
   display: flex;
   width: 100%;
@@ -165,6 +258,7 @@ section.visible {
   margin-bottom: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: right;
 }
 
 .project-title:hover {
@@ -172,26 +266,26 @@ section.visible {
 }
 
 .project-title.selected {
-  background-color: rgba(255, 255, 255, 0.2); /* Highlight color */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .project-details-container {
   width: 70%;
   position: relative;
-  padding-left: 30px; /* Space for the connecting line */
+  padding-left: 30px;
 }
 
 .connecting-line {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 15px; /* Adjust to center of project titles */
+  left: 15px;
   width: 2px;
   background-color: white;
 }
 
 .project-details {
-  padding: 15px;
+  padding: 25px;
   border: 1px solid #333;
   border-radius: 5px;
 }
@@ -199,26 +293,24 @@ section.visible {
 #project-detail-title {
   margin-top: 0;
   text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 20px;
 }
 
 #project-detail-description {
   margin-bottom: 10px;
 }
 
-/* Skill List Styling (reusing from skills section) */
-.skill-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+#project-detail-link {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
 }
-
-.skill-list li {
-  display: inline-block;
-  margin: 5px;
-  padding: 5px 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  white-space: nowrap;
+#project-detail-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
