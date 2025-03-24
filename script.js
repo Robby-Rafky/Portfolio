@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const projectLinks = {
     "3D object detection for locating telephone poles in LiDAR point clouds [In partnership with BT]": "https://github.com/Robby-Rafky/3D-object-detection-for-locating-telephone-poles-in-LiDAR-point-clouds",
-    "Cover Letter Agent" : "https://github.com/Robby-Rafky/CoverLetter_Gen_Agent"
+    "Cover Letter Agent" : "https://github.com/Robby-Rafky/CoverLetter_Gen_Agent",
     "Ponder LIVETRACK": "https://github.com/sporadicE/PONDER",
     "Audio-Visual Object Event Tracking in Time and Space": "https://github.com/Robby-Rafky/Audio-Visual-Object-Event-Tracking-In-Time-And-Space",
     "NLP Project: Classification using NER": "https://github.com/Robby-Rafky/NLP-Project-Classification-using-Named-Entity-Recognition",
