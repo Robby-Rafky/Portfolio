@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const projectLibraryData = {
+    "Cover Letter Agent": ["Python", "Langchain", "Tkinter", "Together.ai"],
     "3D object detection for locating telephone poles in LiDAR point clouds [In partnership with BT]": ["Python", "Sci-Py", "Ultralytics", "openCV", "numPy", "open3d", "Google Colab"],
     "Ponder LIVETRACK": ["Kotlin", "Azure", "C++", "PHP"],
     "Audio-Visual Object Event Tracking in Time and Space": ["Python", "openCV", "Pygame", "numPy", "Pyglet", "imutils"],
